@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rep_proveedor_por_razon_social" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7529fb4d-2b10-4202-bf9c-92f490577d6c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="rso" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[CALL USP_CONSULTA_PROVEEDOR_POR_RSO($P{rso});]]>
+	</queryString>
+	<field name="cod_prv" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rso_prv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ruc_prv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dir_prv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tel_prv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ema_prv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rep_prv" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Group1"/>
+	<group name="Group2"/>
+	<group name="Group3"/>
+	<group name="Group4"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="561c0821-c0eb-40d1-90ba-b01500f10e1a"/>
+				<staticText>
+					<reportElement x="20" y="20" width="439" height="43" forecolor="#FFFFFF" uuid="da205d73-727a-48f9-9419-112f784de7be"/>
+					<textElement>
+						<font size="28" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Proveedor por Razón Social]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="c92c0c66-ec53-4268-b8a1-89537100487f"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="79" height="20" uuid="a8290fba-9c14-4f61-be2f-e36b7b28a831"/>
+				<text><![CDATA[cod_prv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="0" width="79" height="20" uuid="2e1d0d6c-f163-451a-99d0-8b9f761f6157"/>
+				<text><![CDATA[rso_prv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="0" width="79" height="20" uuid="fe981f0f-7157-4eec-a97f-bc0be3f0925e"/>
+				<text><![CDATA[ruc_prv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="0" width="79" height="20" uuid="3715e92f-dd9e-434f-a0ee-399b244c492d"/>
+				<text><![CDATA[dir_prv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="0" width="79" height="20" uuid="172f1883-fa73-4fc0-a703-7fc4fa7fe422"/>
+				<text><![CDATA[tel_prv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="0" width="79" height="20" uuid="ce6ca794-f6c1-4045-a7bd-d0a65c12684f"/>
+				<text><![CDATA[ema_prv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="0" width="79" height="20" uuid="86bff4aa-ff49-41af-86f0-a12ce61dce54"/>
+				<text><![CDATA[rep_prv]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="a08fef93-6683-4896-b821-efb6a006bb22"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="79" height="20" uuid="b447faf9-1281-4c20-a202-382992e649f7"/>
+				<textFieldExpression><![CDATA[$F{cod_prv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="0" width="79" height="20" uuid="2ae51b1c-7646-40ff-b966-7fd1a053da20"/>
+				<textFieldExpression><![CDATA[$F{rso_prv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="0" width="79" height="20" uuid="9df52c12-7212-4fcd-9d08-bda831025c70"/>
+				<textFieldExpression><![CDATA[$F{ruc_prv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="79" height="20" uuid="b8152eec-81ab-4909-b752-97a7894f89c2"/>
+				<textFieldExpression><![CDATA[$F{dir_prv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="79" height="20" uuid="56164f04-1284-4bdb-b302-9b2fe0fd6b92"/>
+				<textFieldExpression><![CDATA[$F{tel_prv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="79" height="20" uuid="3bfbb64e-1908-49ef-9dab-519808c09b3e"/>
+				<textFieldExpression><![CDATA[$F{ema_prv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="0" width="79" height="20" uuid="15aacd0d-e924-4c31-b311-cdd853d3084b"/>
+				<textFieldExpression><![CDATA[$F{rep_prv}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="9152613d-7f36-4072-bf01-9c886bdd47b3"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="3bf96681-5ce8-46e5-b523-0d79e777e0b8"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="fbb20148-6c2a-44c8-913d-debf8d201e92"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

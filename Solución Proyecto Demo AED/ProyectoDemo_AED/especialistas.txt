@@ -1,0 +1,6 @@
+50001;Luis;Pinto Roja;Arquitecto;anexo;20160812;1
+50003;Enrique;Pinedo Rosales;Ingeniero;anexo;20160812;0
+50006;Mario Jesus;Sanchez Ortega;Ingeniero de Software;Adjunta el titulo de su profesion;20150510;0
+50007;Alvaro Joshue;Torres Guzman;Ingeniero y Sistemas;Anexa sus certificados de Estudios;20170713;1
+50008;Lizbeth Edith;Castilla Sánchez;Arquitecta;Certificados de Estudios;20170714;0
+50009;Victor;Valle Díaz;Técnico en PCs;Curriculum;20170715;0

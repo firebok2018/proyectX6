@@ -1,0 +1,6 @@
+10001;10001;20001;30001;40001;Problemas en el area de Soporte.;No vino el trabajor Juan.;5;6;08-07-2017;09-07-2017;30-07-2017;0
+10002;10002;20002;30002;40002;Problemas en el area de Finanzas.;Mal costeo de Presupuesto.;5;6;08-07-2017;09-07-2017;30-07-2017;0
+10003;10003;20003;30003;40003;Problemas en el area de Marketing.;Se ausento el analista de mercadeo.;5;6;08-07-2017;09-07-2017;30-07-2017;0
+10004;10004;20004;30004;40004;Problemas en el area de Recursos Humanos.;No vino el trabajor Juan.;5;6;08-07-2017;09-07-2017;30-07-2017;0
+10005;10005;20005;30005;40005;Problemas en el area de Logística.;No vino el trabajor Juan.;5;6;08-07-2015;09-07-2017;30-07-2015;0
+10006;10006;20006;30006;40006;Problemas en el area de Administración.;No vino el trabajor Juan.;5;6;08-07-2017;09-07-2017;30-07-2017;0

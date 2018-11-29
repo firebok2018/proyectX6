@@ -1,0 +1,4 @@
+60001;10001;50001;30001;Problemas en el área de Soporte;No vino el trabajor Juan;5;6;20170708;20170709;20170730;0
+60004;10002;50002;30002;Problemas en el área de Finanazas;No se ha administrado correctamente los activos;7;8;20170709;20170710;20170711;2
+60005;10003;50003;30003;Problemas en el área de RRHH;No se ha contratado personal;3;5;20170710;20170711;20170711;3
+60006;10003;50003;30003;hola :);Que tal :D;2;3;20170503;20170503;20170503;2

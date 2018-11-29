@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rep_cuenta_bancaria_por_ruc" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9213cfd0-ea6f-4846-b3f7-a80c6fab6d4a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ruc" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[CALL USP_CONSULTA_CUENTA_BANCARIA_POR_RUC($P{ruc});]]>
+	</queryString>
+	<field name="cod_cue" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cod_prv" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nro_cue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ban_cue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tip_cue" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Group1"/>
+	<group name="Group2"/>
+	<group name="Group3"/>
+	<group name="Group4"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="c6951fb3-6e07-4247-aada-7a4eca94fa2e"/>
+				<staticText>
+					<reportElement x="20" y="20" width="407" height="43" forecolor="#FFFFFF" uuid="5b754c82-84e2-4605-bcb1-2876ad4818d5"/>
+					<textElement>
+						<font size="28" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Cuenta bancaria por RUC]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="9c66ee1a-a35d-408b-93ef-9e47d6a2a047"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="20" uuid="382470c5-42e9-49fa-87b0-8bee53414afc"/>
+				<text><![CDATA[cod_cue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="20" uuid="68701409-4432-45a3-bb71-a649fa35bc8e"/>
+				<text><![CDATA[cod_prv]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="20" uuid="84624ce8-22af-4a99-92fa-7488c9051452"/>
+				<text><![CDATA[nro_cue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="20" uuid="f3ac22b3-79fe-417e-b238-8504011eff0d"/>
+				<text><![CDATA[ban_cue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="20" uuid="8c967423-5a4f-4711-9ee9-133b21a73b1e"/>
+				<text><![CDATA[tip_cue]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="dc8e5d4d-2973-4c5d-a4d3-6c06f3b7581a"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="111" height="20" uuid="d9b509ad-d8e6-4807-a523-aa17396afd3d"/>
+				<textFieldExpression><![CDATA[$F{cod_cue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="20" uuid="d72fe25f-b0a8-4fef-9a2d-9091f5397cad"/>
+				<textFieldExpression><![CDATA[$F{cod_prv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="20" uuid="552ebcb1-1a21-40c5-a42f-a0341e3866d7"/>
+				<textFieldExpression><![CDATA[$F{nro_cue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="20" uuid="59fcbc06-8a3a-494a-b9ec-7e5996578a93"/>
+				<textFieldExpression><![CDATA[$F{ban_cue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="20" uuid="da78f8f8-e22d-4e3a-bd8d-552c6380e702"/>
+				<textFieldExpression><![CDATA[$F{tip_cue}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="838cab8f-b9c1-4802-9068-e953571b3028"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="2e4e5fe0-409c-4735-9c11-0afc28ef95b5"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="1df3797b-012a-4e03-8c55-62c0dc9aa5f9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

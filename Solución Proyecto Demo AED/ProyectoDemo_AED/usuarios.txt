@@ -1,0 +1,14 @@
+10001;Carlos Rolando;Mendo Bravo;0;07554084;5;mendopaz@gmail.com;999888777;20180104;1
+10002;Nelly;Uribe Chois;0;06779523;2;nellyuribe@gmail.com;987654321;20180104;1
+10003;Lizbeth Edith;Castilla Sánchez;0;43544289;0;lizbeth.edith@hotmail.com;949490457;20170206;0
+10004;Luis Miguel;Lopez Peña;1;56487694;1;llpoez@hotmail.com;990380839;20160311;1
+10005;Ingrid Cinthia;Miranda Salcedo;1;42748529;2;imiranda@hotmail.com;894653783;20170918;1
+10006;Jairo Carlos;Macedo Chevarria;2;26385497;2;jmacedo@hotmail.com;453824961;20160507;0
+10007;Brayan Antonio;Torres Perez;2;35648764;4;btorres@hotmail.com;748639272;20170623;1
+10008;Evelin Maritza;Pinto Tipismana;2;35428754;4;epinto@hotmail.com;846378298;20151201;1
+10009;Enzo Manuel;Morales Bermudes;3;54328765;2;emorales@hotmail.com;956478398;20150325;1
+10010;Ricardo Edson;Montes Moran;4;43589765;3;rmontes@hotmail.com;765439872;20140130;0
+10011;Jesus Ricardo;Rodriguez Mendoza;4;53674963;0;jrodriguez@hotmail.com;864327529;20140903;0
+10012;Jesusa Irma;Veramendi Ortega;2;43569719;3;jveramendi@hotmail.com;764394279;20170512;0
+10013;Gian Carlos;Macedo Chavarria;0;47810338;4;sgcmacedo@live.com;983266636;20131123;0
+10014;Alberto Segundo;Armendariz Sanchez;1;37648297;3;aArmendariz@hotmail.com;367896432;20160712;1

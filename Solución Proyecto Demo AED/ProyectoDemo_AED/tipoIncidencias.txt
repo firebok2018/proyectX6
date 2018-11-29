@@ -1,0 +1,6 @@
+30001;Evento inusual dentro del área de Finanzas;InusuaFinan;0
+30002;Suceso causante de estragos de posible gravedad en RRHH;GraveRH;1
+30003;Acontecimiento leve en el Departamento Principal;LevDepPrin;0
+30004;Situación peligrosa en el Estacionamiento;PeligEstaci;1
+30005;Huelga;I-1;0
+30006;Falto un empleado;TI-6;0

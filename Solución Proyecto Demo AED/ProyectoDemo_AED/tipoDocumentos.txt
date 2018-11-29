@@ -1,0 +1,4 @@
+40001;Pacto escrito con Proveedor;PacProvee;0
+40002;Documento de autorización de Proyecto Inspección;DocuInsp;1
+40003;Permiso escrito de Aumento Salarial;PermiAumSala;1
+40004;Documento de adqusición de nuevo material tecnológico;AquiMateTec;0

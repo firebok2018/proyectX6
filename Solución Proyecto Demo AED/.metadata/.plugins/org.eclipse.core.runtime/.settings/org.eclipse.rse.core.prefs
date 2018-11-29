@@ -1,0 +1,4 @@
+activeuserprofiles=SUITE301-SERV;SUITE607-SERV;SUITE609-SERV;Team
+eclipse.preferences.version=1
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=pcmendo
+useridperkey=SUITE609-SERV.Local\=pcmendo;

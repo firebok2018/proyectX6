@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rep_orden_compra_por_producto" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="151aa6d3-8881-4b98-a5ef-85a89d4a8fbd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="des" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[CALL USP_CONSULTA_ORDEN_COMPRA_POR_PRODUCTO($P{des});]]>
+	</queryString>
+	<field name="num_oco" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fec_oco" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="des_pro" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="can_ped" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Group1"/>
+	<group name="Group2"/>
+	<group name="Group3"/>
+	<group name="Group4"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="94b67434-418a-4da1-8e92-c91de16014d2"/>
+				<staticText>
+					<reportElement x="20" y="20" width="452" height="43" forecolor="#FFFFFF" uuid="5420db01-0a6d-4f4c-b6dc-4a0c43a7485b"/>
+					<textElement>
+						<font size="28" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Orden de compra por Producto]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="93a6027f-7467-4b3c-aef7-62cb4eed28ae"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="138" height="20" uuid="74864e01-1fa7-4caf-a373-1b8ce0618d2d"/>
+				<text><![CDATA[num_oco]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="138" height="20" uuid="85bc342c-b683-451e-b5a1-b495ae6f7e4e"/>
+				<text><![CDATA[fec_oco]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="138" height="20" uuid="c0a73a86-7c31-4a17-bbd6-e06b68e778a1"/>
+				<text><![CDATA[des_pro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="138" height="20" uuid="812cb281-9c92-4adb-ac7c-f70730d0a343"/>
+				<text><![CDATA[can_ped]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="4d74248d-1613-42e4-843e-54e8ba4d09b2"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="138" height="20" uuid="6981577b-7f61-48be-b804-e3aaa52c88b0"/>
+				<textFieldExpression><![CDATA[$F{num_oco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="138" height="20" uuid="06afb1c3-7c1b-40b9-8d9a-be97343409c8"/>
+				<textFieldExpression><![CDATA[$F{fec_oco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="138" height="20" uuid="dded2d3b-bd52-47b4-9164-c949656a9995"/>
+				<textFieldExpression><![CDATA[$F{des_pro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="138" height="20" uuid="cdc4f676-4b8d-4dd1-a0c6-dc8c5165d850"/>
+				<textFieldExpression><![CDATA[$F{can_ped}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="dacc7e18-e338-4911-8147-77a77575c3bc"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="270ff7a3-21ff-452b-87aa-3d925e9c97cf"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="10b7fc32-3f5d-4ecd-9bc1-fbb86f8888f4"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
